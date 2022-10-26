@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Syntax</title>
+</head>
+<body>
+    <!--
+        JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+    -->
+    <h1>JS Syntax</h1>
+   <!--
+        JavaScript Values
+
+        The JavaScript syntax defines two types of values:
+
+               * Fixed values
+               * Variable values
+
+                Fixed values are called Literals.
+                Variable values are called Variables.
+    -->
+           <h2>JS Literals</h2 >
+            <!--
+                 1. Numbers are written with or without decimals: 
+                 2. Strings are text, written within double or single quotes:
+            -->
+              <p id="num"></p>
+              <p id="str"></p>
+              
+              <h2>JavaScript Variables</h2>
+           <!--
+            In a programming language, variables are used to store data values.
+            JavaScript uses the keywords var, let and const to declare variables.
+            An equal sign is used to assign values to variables.
+            -->
+            <p id="demo"></p>
+
+            <h2>JavaScript Operators</h2>
+            <p id="opr"></p>
+
+            <!-- JavaScript uses an assignment operator ( = ) to assign values to variables: -->
+          <p id="assign"></p>
+
+          <h2>Javascript Expression</h2>
+          <!--
+             An expression is a combination of values, variables, and operators, which computes to a value.
+            The computation is called an evaluation.
+             For example, 5 * 10 evaluates to 50: 
+         -->
+         <p id="expr"></p>
+         <p id="expr1"></p>
+         <p id="name1"></p>
+
+         <h2>JavaScript Keywords</h2>
+<!-- 
+             JavaScript keywords are used to identify actions to be performed.
+             The Var keyword tells the browser to create variables:
+-->
+            <p id="key"></p>
+          
+    <script>
+        
+        // 1. Number 2. String 
+        document.getElementById('num').innerHTML = 10.58;
+        document.getElementById('str').innerHTML = "This is String Value";
+
+        // How To Create A Variables
+        var x,y;
+
+        //  How To Use a Variables
+        x = 5;
+        y = 5;
+        var z = x+y;
+        document.getElementById('demo').innerHTML = z;
+        
+        var opr1 = (5+6)*10;
+        document.getElementById('opr').innerHTML = opr1;
+
+        var x,y;
+        x =10;
+        y = x;
+        document.getElementById('assign').innerHTML = y;
+
+        var x1 = 10; 
+        var x2 = " Anil ";
+        document.getElementById('expr').innerHTML = 5*10;
+        document.getElementById('expr1').innerHTML = x1 * 10;
+        document.getElementById('name1').innerHTML =  x2 + " " + "Sandhi";
+
+        // JS Keywords
+        var num12,num13;
+        num12 = 10;
+        num13 = 20;
+        var num14 = num12 * num13;
+        document.getElementById('key').innerHTML = num14;
+    </script>
+</body>
+</html>

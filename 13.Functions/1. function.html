@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    <script>
+
+        // Basic Function
+        function onePlusAvg(x,y){
+            return 1+(x+y)/2;
+        }
+
+        // Arrow Function
+        const Sum = (p,q) => {
+            return p+q;
+        }
+
+        //  Simple Function
+        const hello = () =>{
+            console.log("Hi,How are You");
+            return "Hi";
+        }
+
+        let a=1;
+        let b=2;
+        let c=3;
+        console.log("One Plus Average of A and B is : " , onePlusAvg(a,b));
+        console.log("One Plus Average of B and C is : " , onePlusAvg(b,c));  
+        console.log("One Plus Average of C and A is : " , onePlusAvg(c,a));  
+        console.log("Sum of P and Q is : " , Sum(9,5));
+        console.log(hello());  
+</script>
+</body>
+</html>

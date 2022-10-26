@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Output</title>
+</head>
+<body>
+    <!--
+                JavaScript Display Possibilities
+        JavaScript can "display" data in different ways:
+
+        Writing into an HTML element, using innerHTML.
+        Writing into the HTML output using document.write().
+        Writing into an alert box, using window.alert().
+        Writing into the browser console, using console.log().
+    -->
+    <h1>JS Output</h1>
+     <!-- Print Function Using Javascript -->
+    <button type="button" onclick="window.print()">Print This Page</button>
+
+    <p id="demo"></p>
+   
+    <script>
+
+        // Using innerHTML;
+        document.getElementById('demo').innerHTML =  "This is Paragraph";
+        
+        //   Using Document.Write();
+        document.write("Hello Javascript");
+
+        //Using Window.alert();
+        var a = 5;
+      window.alert(a);
+
+      // Using Console.log;
+      console.log("Hello Javascript");
+    </script>
+</body>
+</html>

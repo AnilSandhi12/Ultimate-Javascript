@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Where To</title>
+</head>
+<body>
+
+    <h1>Where We Can Write JS.</h1>
+      <h2>The Script Tag</h2>
+      <p id="demo"></p>
+
+        <!--On Click Event-->
+      <button type="button" onclick="myFunction()">Click Here</button>
+      <p id="change">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, exercitationem!</p>
+
+      <script>
+      //  document.write("Hello Javascript"); 
+       document.getElementById('demo').innerHTML = "<b><i>Hello Javascript</i></b>";
+       document.getElementById('demo').style.fontSize = "30px";
+       document.getElementById('demo').style.color = "white";
+       document.getElementById('demo').style.background = "black";
+       document.getElementById('demo').style.padding = "20px";
+
+       function myFunction(){   
+        document.getElementById('change').innerHTML = "Paragraph Changed.";
+       }
+      </script>
+</body>
+</html>

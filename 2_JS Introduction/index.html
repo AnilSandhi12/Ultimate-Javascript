@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+             <h1>JS Introduction</h1>
+         
+             <!--  This page contains some examples of what JavaScript can do.  -->
+
+            <!--JS Can Change HTML Content-->
+            <button type="button" onclick = "document.getElementById('change').innerHTML ='<b>Button is Clicked</b>'">Click Here</button>
+            <p id="change"></p>  
+
+            <h1>JavaScript Can Change HTML Attribute Values</h1>
+
+            <!--            Bulb On Off        -->
+            <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+            
+            <button type="button" onclick="document.getElementById('onoff').src='../0_img/pic_bulbon.gif'">Turn On The Bulb</button> 
+            
+            <img src="../0_img/pic_bulboff.gif" alt="Getting Error" id="onoff" style="width: 100px;">   
+          
+            <button type="button" onclick="document.getElementById('onoff').src='../0_img/pic_bulboff.gif '">Turn Off The Bulb</button>
+           
+                     <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+
+                     <!--JavaScript Can Change HTML Styles (CSS)-->
+              <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, provident?</p> 
+              
+              <h2>JavaScript Can Hide HTML Element</h2>
+
+                  <!--JavaScript Can Hide HTML Element-->
+              <p id="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolorem.</p>
+              
+              <h2>JavaScript Can Show HTML Element</h2>
+
+                     <!--JavaScript Can Show HTML Element-->
+              <p id="show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolorem.</p>
+
+<!--
+                   * Did You Know? *
+
+                JavaScript and Java are completely different languages, both in concept and design.
+
+                JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+
+                ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+-->              
+       
+       <script>
+
+            // JavaScript Can Change HTML Styles (CSS)
+        document.getElementById('para').style.color ='white';
+        document.getElementById('para').style.background='purple';
+        document.getElementById('para').style.padding = "10px";
+        
+            // JavaScript Can Hide HTML Element
+       document.getElementById('hide').style.display = "none";
+
+          //    JavaScript Can Show HTML Element
+       document.getElementById('show').style.display = "block"; 
+       document.getElementById('show').style.background = "black";
+       document.getElementById('show').style.color = "white";
+       document.getElementById('show').style.padding = "10px";
+       </script>           
+</body>
+</html>

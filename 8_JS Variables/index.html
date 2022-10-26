@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Variables</title>
+</head>
+<body>
+    <h1>Variables in JS</h1>
+<!--
+                  * 4 Ways to Declare a JavaScript Variable: *
+
+                            Using var
+                            Using let
+                            Using const
+                            Using nothing
+
+                     * What are Variables? *
+
+        Variables are containers for storing data (storing data values).
+
+
+                           * When to Use JavaScript var? *
+
+                    Always declare JavaScript variables with var,let, orconst.
+
+                    The var keyword is used in all JavaScript code from 1995 to 2015.
+
+                    The let and const keywords were added to JavaScript in 2015.
+
+                    If you want your code to run in older browser, you must use var.
+
+
+                      * When to Use JavaScript const? *
+
+                If you want a general rule: always declare variables with const.
+
+                If you think the value of the variable can change, use let.
+
+                In this example, price1, price2, and total, are variables:
+-->
+
+<!--
+                       * JavaScript Identifiers: *
+
+                    All JavaScript variables must be identified with unique names.
+
+                    These unique names are called identifiers.
+
+                    Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+                 *  The general rules for constructing names for variables (unique identifiers) are: *
+
+                    Names can contain letters, digits, underscores, and dollar signs.
+                    Names must begin with a letter
+                    Names can also begin with $ and _ (but we will not use it in this tutorial)
+                    Names are case sensitive (y and Y are different variables)
+                    Reserved words (like JavaScript keywords) cannot be used as names
+
+                    JavaScript identifiers are case-sensitive.
+-->
+<script>
+        // Three Variables in JS: Var,Let and Const
+        // Using Var Keyword.
+        var fname = " Anil ";
+        var lname = " Sandhi ";
+        document.write("My Name is:" + fname + lname + "<br>");
+       
+        //  Using let Keyword.
+        let x = 10;
+        let y = 20;
+        let sum = x + y;
+        document.write("Addition is:" + sum + "<br>");
+        
+        // undeclared Variables
+        a = 40;
+        b = 20;
+        z = a / b;
+        document.write("Division is :" + z + "<br>");
+
+        const price1 = 212;
+        const price2 = 12;
+        let sub = price1 - price2;
+        document.write("Our Origional Price is :" + sub + "rs" + "<br>");
+
+        // Declaring a JavaScript Variable
+           let carName = "Volvo";
+           document.write("Car Name is :" + carName + "<br>"); 
+           
+        // Also Declare JS Variable 
+        let movieName;
+        movieName = "Chal Mera Putt";
+        document.write("My Favourite Movie is :" + movieName + "<br>");    
+
+        // One Statement, Many Variables
+        let val1= 10; val2 = 20, val3 = 30, val4 = "Yatin Grover :)", add = val1 + val2 + val3;
+        document.write("Our Output is : " + add + "<br>"); 
+        document.write("My Name is : " + val4 + "<br>");
+
+        // Value = undefined
+        let  und;
+        document.write(und + "<br>");
+
+        //   Create Variable Using $ Sign
+        var $ = " Valid ";
+        var $$$$ = " Valid ";
+        var $$myMoney = " Valid ";
+        document.write("This is :" + $ + $$$$ + $$myMoney + "<br>");
+
+        // Using Underscores:
+        var _lname = "Sandhi";
+        var _2 = 20;
+        var _100 = 100;
+        document.write("Our Output is :" + _lname + _2 + _100);
+        </script>
+</body>
+</html>

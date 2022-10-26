@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set of For In Loop</title>
+</head>
+<body>
+    <script>
+        //1.  Write a Program To Print Marks of Student in an Object Using forin Loop.
+        //2.  Write a Program To Print Marks of Student in an Object Using for Loop.
+        let studentMarks = {
+            Anil : 29,
+            Yatin : 29,
+            Saman : 30,
+            Hardeep : 26,
+            Anshu : 25  
+        }
+
+        //1.  Print Marks Using For In Loop
+        for(let a in studentMarks){
+            console.log("Makes of " + a + " Are " + studentMarks[a]);
+        }
+ 
+        //2. Print Marks Using For Loop
+        for(let i=0;i<Object.keys(studentMarks).length;i++){
+            console.log("Marks of " + Object.keys(studentMarks)[i] + " Are " + studentMarks[Object.keys(studentMarks)[i]]);
+        }
+
+        //3. WAP to Print Try again untill the User Enters Correct Number.
+        let correctNumber = 4;
+        let i;
+        while(i!=correctNumber){
+            console.log("Try Again");
+            i = prompt("Enter a Number : ");  
+        }
+        console.log("You Have Entered Correct Number :)");
+    </script>
+</body>
+</html>
