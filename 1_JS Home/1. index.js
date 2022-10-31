@@ -1,0 +1,1 @@
+document.getElementById("first_js").innerHTML = "My First Javascript :)";
