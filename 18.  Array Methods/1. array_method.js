@@ -51,7 +51,7 @@ console.log(newArray);
 // Sort Method :
 a3.sort(); // Remember, it Modifies Our Origional Array.
 console.log(a3); // Sort Alphabatically.
-
+                      
 // Ascending Order
 let compareab = (a, b) => {
   return a - b;
@@ -73,3 +73,15 @@ console.log(a3);
 // Splice and Slice:
 // Splice can Be Used to Add Neww item to An Array.
 //  Slice out of Pieces from an Array it Create a New Array.
+
+let spliceArr = [12,34,65,87,92,43];
+let deletedArr=spliceArr.splice(2,3,21,22,23);
+console.log(spliceArr);
+console.log(deletedArr);
+
+
+let sliceArr = [82,44,95,77,22,53];
+let sliceArray=sliceArr.slice(2);
+console.log(sliceArray );
+let sliceArr25=sliceArr.slice(2,5);
+console.log(sliceArr25);//5 is Not Included;
